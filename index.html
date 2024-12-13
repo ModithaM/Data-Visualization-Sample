@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="chart">
+        <canvas id="userCategoryChart" width="400" height="200"></canvas>
+
+        <script>
+            // Retrieve data from request attributes set in the servlet
+            var adminCount = 10;//${adminCount}; // can use java attributes here
+            var buyerCount = 100;//${buyerCount};
+            var sellerCount = 30;//${sellerCount};
+
+            chartdisplay(adminCount, buyerCount, sellerCount);
+        </script>
+    </div>
+</body>
+</html>
